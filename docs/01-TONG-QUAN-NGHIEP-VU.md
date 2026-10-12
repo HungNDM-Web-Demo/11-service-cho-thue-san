@@ -14,7 +14,7 @@
 | Loại sản phẩm | Web quản lý + trang đặt sân cho khách |
 | Ý tưởng gốc | 3.3 · Cho thuê sân thể thao (`ZDOCS/02-KE-HOACH/DANH-SACH-Y-TUONG.md`) |
 | Người phụ trách | |
-| Trạng thái | Mới tạo từ khuôn mẫu |
+| Trạng thái | Có tài liệu nghiệp vụ (SRS, use case, kịch bản demo, kịch bản kiểm thử), chưa code |
 
 ## 2. Vấn đề của khách hàng
 
@@ -45,14 +45,18 @@
 | Area | Chức năng | Màn hình (route FE dự kiến) | Ưu tiên |
 | :--- | :--- | :--- | :---: |
 | `System` | Đăng nhập, tài khoản, vai trò, cài đặt | Có sẵn | — |
+| `Booking` | Tổng quan trong ngày | `/dashboard` | P1 |
 | `Booking` | Sân, loại sân | `/courts` | P1 |
 | `Booking` | Lịch sân theo khung giờ | `/schedule` | P1 |
 | `Booking` | Đặt sân online | `/dat-san` | P1 |
+| `Booking` | Khách tra cứu, tự hủy lượt đặt | `/dat-san/tra-cuu` | P2 |
 | `Booking` | Bảng giá giờ cao điểm | `/pricing` | P1 |
+| `Booking` | Danh sách lượt đặt, hủy, hoàn cọc | `/bookings` | P2 |
 | `Booking` | Đặt cố định theo tuần | `/bookings/recurring` | P2 |
 | `Booking` | Đặt cọc, thanh toán | `/bookings/[id]` | P1 |
 | `Pos` | Bán kèm dịch vụ | `/bookings/[id]` | P2 |
 | `Booking` | Báo cáo công suất sân | `/reports` | P2 |
+| `Crm` | Khách hàng, lịch sử đặt sân | `/customers` | P3 |
 
 P1 = bắt buộc có để demo · P2 = nên có · P3 = làm thêm nếu còn thời gian.
 
